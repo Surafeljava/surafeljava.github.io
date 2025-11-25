@@ -7,7 +7,6 @@
   const initial = stored || 'dark';
   root.setAttribute('data-theme', initial);
   if (select) select.value = initial;
-
   function applyTheme(value) {
     root.setAttribute('data-theme', value);
     try { localStorage.setItem('theme', value); } catch {}
